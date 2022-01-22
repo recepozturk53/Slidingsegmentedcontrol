@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -44,16 +42,25 @@ class _MyHomePageState extends State<MyHomePage> {
             width: 120.0,
             height: 160.0,
             alignment: Alignment.topCenter,
-            padding: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-            child: Image.asset("images/fluttericon.png",fit: BoxFit.fitWidth,alignment: Alignment.center,),
-
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            child: Image.asset(
+              "images/fluttericon.png",
+              fit: BoxFit.fitWidth,
+              alignment: Alignment.center,
+            ),
           ),
           new Container(
             alignment: Alignment.center,
-            padding: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-            child: Text('Flutter Training for Cupertino Sliding SegmentedControl',textAlign: TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,fontSize: 25.0,color: Colors.white,
-
-            ),),
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            child: Text(
+              'Flutter Training for Cupertino Sliding SegmentedControl',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontStyle: FontStyle.italic,
+                fontSize: 25.0,
+                color: Colors.white,
+              ),
+            ),
           ),
           new Container(
             alignment: Alignment.topCenter,
@@ -100,12 +107,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           new Container(
               decoration: new BoxDecoration(
-                color: CupertinoColors.systemGrey6,
-                borderRadius: new BorderRadius.all(
-                  new Radius.circular(6.0)
-                )
-              ),
-              margin: EdgeInsets.symmetric(vertical: 12,horizontal: 20),
+                  color: CupertinoColors.systemGrey6,
+                  borderRadius: new BorderRadius.all(new Radius.circular(6.0))),
+              margin: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Row(
@@ -116,14 +120,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                       color: Colors.black,
-
                     ),
                   ),
                   new CupertinoSlidingSegmentedControl<int>(
-
                     backgroundColor: CupertinoColors.systemGrey2,
-
-                    thumbColor: _groupvalue2 == 0 ? CupertinoColors.destructiveRed : CupertinoColors.activeGreen,
+                    thumbColor: _groupvalue2 == 0
+                        ? CupertinoColors.destructiveRed
+                        : CupertinoColors.activeGreen,
                     padding: EdgeInsets.all(4),
                     groupValue: _groupvalue2,
                     children: {
