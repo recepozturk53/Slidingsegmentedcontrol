@@ -1,5 +1,7 @@
 # slidingsegmentedcontrol
 
+![mockup](https://github.com/recepozturk53/Slidingsegmentedcontrol/blob/master/screenshoots/SSC.png)
+
 A new Flutter application.
 
 ## Getting Started
